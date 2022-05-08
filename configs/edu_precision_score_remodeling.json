@@ -1,0 +1,33 @@
+{
+  "datasets": ["education"],
+  "X": {
+    "education": "matrices/portuguese_students/portuguese_students_X.csv"
+  },
+  "y": {
+    "education": "matrices/portuguese_students/portuguese_students_y.csv"
+  },
+  "sub_groups": {
+    "education": []
+  },
+  "metrics": [
+    "roc_auc_score",
+    "f1_score",
+    "accuracy_score",
+    "precision_score@10",
+    "precision_score@25",
+    "recall_score@10",
+    "recall_score@25"
+  ],
+  "split_methods": ["StratifiedKFold@5"],
+  "split_random_states": [1729],
+  "hyperparameters": {
+    "RF": {
+      "n_estimators": [50, 100, 500],
+      "max_depth": [250, 500, 750],
+      "max_features": [null],
+      "min_samples_split": [2, 10, 20, 50]
+    }
+  },
+  "save_to_db": true,
+  "postgres_nodelist": "cs003-ib0"
+}

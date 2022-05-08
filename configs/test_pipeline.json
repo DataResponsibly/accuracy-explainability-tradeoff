@@ -1,0 +1,37 @@
+{
+  "datasets": ["education", "housing", "healthcare"],
+  "X": {
+    "education": "matrices/portuguese_students/portuguese_students_X.csv",
+    "housing": "matrices/housing_prices/X.csv",
+    "healthcare": "matrices/diabetes/diabetes_X.csv"
+  },
+  "y": {
+    "education": "matrices/portuguese_students/portuguese_students_y.csv",
+    "housing": "matrices/housing_prices/y.csv",
+    "healthcare": "matrices/diabetes/diabetes_y.csv"
+  },
+  "sub_groups": {
+    "education": [],
+    "housing": [],
+    "healthcare": []
+  },
+  "metrics": ["roc_auc_score", "accuracy_score", "precision_score@25"],
+  "split_methods": ["train_test_split@25"],
+  "split_random_states": [42],
+  "hyperparameters": {
+    "LR": {
+      "penalty": ["l1", "l2"],
+      "C": [1]
+    },
+    "DT": {
+      "max_depth": [1, 2, 5],
+      "max_features": ["sqrt"]
+    },
+    "LRL": {
+      "alpha": [1.0],
+      "fit_intercept": [true, false]
+    }
+  },
+  "save_to_db": true,
+  "postgres_nodelist": "cs003-ib0"
+}

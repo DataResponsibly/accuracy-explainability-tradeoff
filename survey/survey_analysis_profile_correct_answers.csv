@@ -1,0 +1,33 @@
+dataset_name,model,profile_number,q1_correct_answer,q2_correct_answer
+education,dt,1,Fail,First year grade
+education,dt,2,Pass,First year grade
+education,dt,3,Fail,First year grade
+education,dt,4,Pass,First year grade
+education,lr,1,Fail,First year grade
+education,lr,2,Pass,First year grade
+education,lr,3,Fail,First year grade
+education,lr,4,Pass,First year grade
+education,shap,1,Fail,First year grade
+education,shap,2,Pass,First year grade
+education,shap,3,Fail,First year grade
+education,shap,4,Pass,First year grade
+education,no_shap,1,Fail,First year grade
+education,no_shap,2,Pass,First year grade
+education,no_shap,3,Fail,First year grade
+education,no_shap,4,Pass,First year grade
+housing,dt,1,Will have a high sales price,Size of living area
+housing,dt,2,Will NOT have a high sales price,Size of living area
+housing,dt,3,Will have a high sales price,Size of living area
+housing,dt,4,Will NOT have a high sales price,Size of living area
+housing,lr,1,Will have a high sales price,House grade
+housing,lr,2,Will NOT have a high sales price,House grade
+housing,lr,3,Will have a high sales price,House grade
+housing,lr,4,Will NOT have a high sales price,House grade
+housing,shap,1,Will have a high sales price,House grade
+housing,shap,2,Will NOT have a high sales price,House grade
+housing,shap,3,Will have a high sales price,House grade
+housing,shap,4,Will NOT have a high sales price,House grade
+housing,no_shap,1,Will have a high sales price,House grade
+housing,no_shap,2,Will NOT have a high sales price,House grade
+housing,no_shap,3,Will have a high sales price,House grade
+housing,no_shap,4,Will NOT have a high sales price,House grade
